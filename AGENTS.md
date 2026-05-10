@@ -12,25 +12,25 @@ AmethystCore is the **shared Python library** used by every other service. It co
 
 ## Stack
 
-| Item | Detail |
-|---|---|
-| Language | Python 3.11.x |
-| Package manager | Poetry 1.7.x |
-| Package name | `amethyst_core` |
-| Install method | Local path dependency in each consuming service's `pyproject.toml` |
+| Item            | Detail                                                             |
+| --------------- | ------------------------------------------------------------------ |
+| Language        | Python 3.11.x                                                      |
+| Package manager | Poetry 1.7.x                                                       |
+| Package name    | `amethyst_core`                                                    |
+| Install method  | Local path dependency in each consuming service's `pyproject.toml` |
 
 ---
 
 ## What Belongs Here
 
-| Module | Purpose |
-|---|---|
-| `amethyst_core.connectors.postgres` | `asyncpg` connection pool factory |
-| `amethyst_core.connectors.redis` | `aioredis` connection factory |
-| `amethyst_core.config` | `AmethystBaseConfig` (Pydantic BaseSettings) |
-| `amethyst_core.logging` | Structured JSON logger setup |
-| `amethyst_core.base_service` | `BaseService` — SIGTERM/SIGINT graceful shutdown |
-| `amethyst_core.market_calendar` | UTC market hours, trading day logic |
+| Module                              | Purpose                                          |
+| ----------------------------------- | ------------------------------------------------ |
+| `amethyst_core.connectors.postgres` | `asyncpg` connection pool factory                |
+| `amethyst_core.connectors.redis`    | `aioredis` connection factory                    |
+| `amethyst_core.config`              | `AmethystBaseConfig` (Pydantic BaseSettings)     |
+| `amethyst_core.logging`             | Structured JSON logger setup                     |
+| `amethyst_core.base_service`        | `BaseService` — SIGTERM/SIGINT graceful shutdown |
+| `amethyst_core.market_calendar`     | UTC market hours, trading day logic              |
 
 ---
 
